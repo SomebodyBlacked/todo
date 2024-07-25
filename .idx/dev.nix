@@ -15,6 +15,7 @@
       "angular.ng-template"
       "vscode-icons-team.vscode-icons"
       "zhuangtongfa.material-theme"
+      "esbenp.prettier-vscode"
     ];
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
