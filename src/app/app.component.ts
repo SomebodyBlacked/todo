@@ -9,22 +9,22 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Lista de tareas';
-  description = 'Una lista de tareas para organizar tus actividades';
+  title = 'To-Do List';
+  description = 'A to-do list to organize your activities';
   tasks = [
     {
-      title: 'Tarea 1',
-      description: 'Descripción de la tarea 1',
+      title: 'Task 1',
+      description: 'Description of task 1',
       complete: false,
     },
     {
-      title: 'Tarea 2',
-      description: 'Descripción de la tarea 2',
+      title: 'Task 2',
+      description: 'Description of task 2',
       complete: true,
     },
     {
-      title: 'Tarea 3',
-      description: 'Descripción de la tarea 3',
+      title: 'Task 3',
+      description: 'Description of task 3',
       complete: false,
     },
   ];
