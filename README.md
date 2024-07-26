@@ -1,27 +1,54 @@
-# Myapp
+# Task Management Application (To-Do)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Description
 
-## Development server
+This is a task management (To-Do) application developed using Angular. It allows users to add, remove, and mark tasks as completed. The application is designed to help users organize their daily tasks efficiently and simply.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Add Tasks**: Users can add new tasks to the list.
+- **Remove Tasks**: Users can remove tasks that are no longer needed.
+- **Mark Tasks as Completed**: Users can mark tasks as completed to keep track of their progress.
+- **Task List**: View all tasks in a list with options to sort and filter them.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies
 
-## Build
+- **Angular**: Framework used for building the web application.
+- **TypeScript**: Language used for developing the application.
+- **HTML/CSS**: Technologies used for designing and styling the interface.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js and npm (Node Package Manager) installed on your machine.
 
-## Running end-to-end tests
+### Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone the repository:
 
-## Further help
+   ```bash
+   git clone https://github.com/SomebodyBlacked/todo.git
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. Navigate to the project directory:
+
+   ```bash
+   cd todo
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+To start the development server and view the application in your browser, use the following command:
+
+```bash
+npm run start
+```
+
+Open your browser and navigate to `http://localhost:4200` to view the application.
