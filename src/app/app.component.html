@@ -5,12 +5,11 @@
   <hr />
   <div class="card">
     <ul>
-      @for (task of tasks; track $index) {
+      @for (todo of todos; track $index) {
       <li>
         <p>
-          <input type="checkbox" [checked]="task.complete" />
-          <strong>{{ task.title }}</strong
-          >: {{ task.description }}
+          <input type="checkbox" [checked]="todo.completed" />
+          <strong>{{ todo.title }}</strong>
         </p>
       </li>
       }

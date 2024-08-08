@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Todo } from './todo.model';
+import { TodoService } from './firetodo.service';
 
 @Component({
   selector: 'app-root',
@@ -11,21 +13,12 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'To-Do List';
   description = 'A to-do list to organize your activities';
-  tasks = [
-    {
-      title: 'Task 1',
-      description: 'Description of task 1',
-      complete: false,
-    },
-    {
-      title: 'Task 2',
-      description: 'Description of task 2',
-      complete: true,
-    },
-    {
-      title: 'Task 3',
-      description: 'Description of task 3',
-      complete: false,
-    },
-  ];
+
+  todos: Todo[] = [];
+
+  constructor(private todoService: TodoService) {
+    this.todoService.getTodos().subscribe((todos) => {
+      this.todos = todos;
+    });
+  }
 }
